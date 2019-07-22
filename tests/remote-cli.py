@@ -40,8 +40,6 @@ for i in range (20):
     author_index = int(input("Rentre le numéro correspondant au bon auteur: "))
     connection.send_request(author_index)
 
-    print(connection.valid_answer)
-
     if (connection.valid_answer):
         print("Bonne réponse")
     else:

@@ -1,7 +1,7 @@
-from game import *
+from culture-g import game
 
-core = Core()
-player = Player(core)
+core = game.Core()
+player =  game.Player(core)
 
 #game loop
 for i in range (20):

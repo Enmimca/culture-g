@@ -1,7 +1,8 @@
+from . import game
 from flask import Flask, jsonify, request
-import game
 import random
 import uuid
+
 
 app = Flask(__name__)
 core = game.Core()
