@@ -34,7 +34,7 @@ class Core:
     def __init__(self):
         self.quotes = []
         #lit le fichier data.json et convertit son contenu en objets Quote
-        with open('data.json') as json_file:
+        with open('./data.json') as json_file:
             for json_quote in json.load(json_file):
                 self.quotes.append(Quote(**json_quote))
 

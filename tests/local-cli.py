@@ -1,4 +1,4 @@
-from culture-g import game
+from cultureg import game
 
 core = game.Core()
 player =  game.Player(core)
