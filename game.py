@@ -109,7 +109,7 @@ class Player:
             self.authors_suggestion = Suggestion(self)
 
     def check_answer(self, answer):
-        self.valid_answer = self.authors_suggestion.right_author_index == answer-1
+        self.valid_answer = self.authors_suggestion.right_author_index == answer
         return self.valid_answer
 
 
