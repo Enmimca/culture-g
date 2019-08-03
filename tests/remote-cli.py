@@ -4,7 +4,7 @@ import json
 class Connection():
 
     # api-endpoint 
-    URL = "http://127.0.0.1:5000/"
+    URL = "http://0.0.0.0:8080/"
 
     def __init__(self):
         
