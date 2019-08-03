@@ -58,6 +58,6 @@ async def quotes(request):
 
 
 app = web.Application()
-app.add_routes([web.get('/login', login),
-                web.get('/quotes', quotes)])
+app.add_routes([web.post('/login', login),
+                web.post('/quotes', quotes)])
 web.run_app(app)

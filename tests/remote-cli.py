@@ -4,12 +4,13 @@ import json
 class Connection():
 
     # api-endpoint 
-    URL = "http://0.0.0.0:8080/"
+    URL = "http://localhost:8080/"
 
     def __init__(self):
         
         # login request
         request = requests.post(url = Connection.URL + "login")
+        print(request.text)
         data = json.loads(request.text)
 
         self.id = data["id"]
@@ -27,6 +28,7 @@ class Connection():
     def send_request(self, author_index):
         # quotes request
         request = requests.post(url = Connection.URL + "quotes", data = {"id" : self.id, "token" : self.token, "author_index" : author_index})
+        print(request.text)
         data = json.loads(request.text)
         self._set_values(**data)
 
